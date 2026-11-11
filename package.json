@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A one-page portfolio. Beige paper, dark grey type, and a line that types itself, then takes the words back.",
+  "main": "script.js",
+  "scripts": {
+    "build": "esbuild analytics-entry.js --bundle --format=iife --outfile=analytics.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahiyani/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nahiyani/personal-website/issues"
+  },
+  "homepage": "https://github.com/nahiyani/personal-website#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
