@@ -47,9 +47,9 @@ try { if (localStorage.getItem('theme') === 'dark') document.documentElement.set
           <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a7.2 7.2 0 0 0-7.2 7.2c0 5.4 7.2 12.4 7.2 12.4s7.2-7 7.2-12.4A7.2 7.2 0 0 0 12 2.2zm0 9.7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Ottawa</span><i>Canada</i></p></div>
           <div class="dates"><span class="leaf"><b>2026</b><i>MAY</i></span><span class="span"><em>4 months</em></span><span class="leaf"><b>2026</b><i>AUG</i></span></div></div>
           <ul>
-            <li>Built Python and Java payload processors and coordinators with RESTful APIs and asynchronous flows, cutting end-to-end processing time by 25% and raising throughput by 40%.</li>
-            <li>Standardized container deployments with Kubernetes and Helm on Linux, cutting staging-to-production promotion time by 32% and provisioning errors by 95%.</li>
-            <li>Automated delivery and infrastructure with Jenkins, ArgoCD and Terraform, and set up repeatable release workflows monitored with Prometheus and Grafana.</li>
+            <li>Built Python and Java payload processors, Kafka event-driven coordinators, and RESTful APIs, with S3 storage and asynchronous queues, cutting end-to-end processing time by 25% and raising throughput by 40%.</li>
+            <li>Standardized microservice deployments with custom Helm charts, Kubernetes, Docker, and Linux, cutting staging-to-production promotion time by 32% and provisioning errors by 95%.</li>
+            <li>Automated Jenkins CI/CD and infrastructure with Groovy, ArgoCD, and Terraform, and monitored releases with Prometheus and Grafana, improving release workflow efficiency by 57%.</li>
           </ul>
         </div>
       </article>
@@ -62,9 +62,9 @@ try { if (localStorage.getItem('theme') === 'dark') document.documentElement.set
           <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a7.2 7.2 0 0 0-7.2 7.2c0 5.4 7.2 12.4 7.2 12.4s7.2-7 7.2-12.4A7.2 7.2 0 0 0 12 2.2zm0 9.7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Ottawa</span><i>Canada</i></p></div>
           <div class="dates"><span class="leaf"><b>2025</b><i>SEP</i></span><span class="span"><em>8 months</em></span><span class="leaf"><b>2026</b><i>APR</i></span></div></div>
           <ul>
-            <li>Developed backend services for a risk analysis automation platform, automating VMware VM provisioning and YAML-based test workflows to cut validation cycles by 65%.</li>
-            <li>Engineered lightweight Go daemon agents and RESTful APIs, reducing inter-service latency by 35% with 99.9% accurate host fingerprinting.</li>
-            <li>Wrote integration test suites that lifted code coverage from 55% to 88% and cut post-deployment defects by 40%.</li>
+            <li>Developed Go and PostgreSQL backend services for a risk analysis platform, automating VMware vCenter VM provisioning and YAML test workflows to cut validation cycles by 65%.</li>
+            <li>Engineered lightweight Go daemon agents and RESTful APIs behind NGINX, reducing inter-service latency by 35% with 100% accurate host fingerprinting.</li>
+            <li>Added Jenkins pipelines, Uptime Kuma monitoring, and unit, integration, regression, and end-to-end tests, lifting coverage from 55% to 88% and cutting post-deployment defects by 40%.</li>
           </ul>
         </div>
       </article>
@@ -78,7 +78,7 @@ try { if (localStorage.getItem('theme') === 'dark') document.documentElement.set
           <div class="dates"><span class="leaf"><b>2025</b><i>JAN</i></span><span class="span"><em>4 months</em></span><span class="leaf"><b>2025</b><i>APR</i></span></div></div>
           <ul>
             <li>Migrated Envoke's API into the Prime Minister of Canada's website with custom Drupal modules and PHP, cutting email template generation time by 98% and removing subscription downtime.</li>
-            <li>Modernized front-end components with PHP, JavaScript and responsive CSS, improving page-load performance by 30% and fixing 40+ cross-browser defects.</li>
+            <li>Modernized front-end components with PHP, JavaScript, and responsive CSS, improving page-load performance by 30% and fixing 15+ cross-browser defects.</li>
             <li>Streamlined release cycles in a Docker, DDEV and Linux stack with Azure DevOps CI/CD, cutting build-and-deploy time by 36%.</li>
           </ul>
         </div>
@@ -96,12 +96,12 @@ try { if (localStorage.getItem('theme') === 'dark') document.documentElement.set
           <h3>Google Drive File Organizer</h3>
           <p class="tagline">A Chrome extension that sorts your Drive for you.</p>
           <ul>
-            <li>Classifies files by project, type or date with Mistral-7B and builds folder structures from file metadata through the Drive API.</li>
-            <li>Runs in a background service that handles AI-generated plans and concurrent batch moves, with progress tracking and a keyword-based fallback.</li>
-            <li>Adds AI query expansion to Drive search, with MIME-type, date, ownership and status filters. Chrome Identity keeps API access secure.</li>
+            <li>A Manifest V3 Chrome extension in React and TypeScript that organizes a Google Drive folder through the Drive API, using Mistral-7B on the Hugging Face Inference API to group files by project, MIME type, or date.</li>
+            <li>A service worker messages the popup, creates folders, and moves files concurrently, with live progress tracking and a keyword fallback when the model response cannot be parsed.</li>
+            <li>Semantic search expands queries with Mistral-7B into paginated full-text Drive searches, with MIME-type, modified time, ownership, and starred filters authorized through OAuth2.</li>
           </ul>
           <div class="langs" data-repo="nahiyani/Google_Drive_File_Organizer_Extension_NK" data-fallback="TypeScript"></div>
-          <div class="tags"><span>React.js</span><span>TypeScript</span><span>Hugging Face</span><span>Mistral-7B</span><span>JavaScript</span><span>OAuth2</span></div>
+          <div class="tags"><span>React.js</span><span>TypeScript</span><span>Vite</span><span>Manifest V3</span><span>Hugging Face</span><span>Mistral-7B</span><span>Google Drive API</span><span>OAuth2</span></div>
           <a class="link" href="https://github.com/nahiyani/Google_Drive_File_Organizer_Extension_NK" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </article>
@@ -111,12 +111,12 @@ try { if (localStorage.getItem('theme') === 'dark') document.documentElement.set
           <h3>Fordward</h3>
           <p class="tagline">EV route planning for Ford. Built at uOttaHack 6.</p>
           <ul>
-            <li>Full-stack app that optimizes electric vehicle routes using nearby charging stations and real-time traffic.</li>
-            <li>Flutter and Dart front end, with route optimization algorithms in Python on the back end.</li>
-            <li>Google Maps API for live route visualization, and Firebase for secure authentication and login.</li>
+            <li>A full-stack EV route planner for Ford, built at uOttaHack 6, using nearby charging stations, GPS, a battery threshold, and live traffic on a driver dashboard.</li>
+            <li>Flutter and Dart front end with Material Design, Google Maps, Places autocomplete, and Geolocator, and route optimization in Python and Flask.</li>
+            <li>Google Maps API for live routes and Firebase Authentication for email-and-password sign-in, with settings for the F-150 and Mustang Mach-E and options to avoid highways, tolls, and ferries.</li>
           </ul>
           <div class="langs" data-repo="KYLEKHAI/fordward" data-fallback="Dart"></div>
-          <div class="tags"><span>Flutter</span><span>Dart</span><span>Python</span><span>Google Firebase</span><span>Google Maps API</span></div>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>Python</span><span>Flask</span><span>Google Firebase</span><span>Google Maps API</span></div>
           <a class="link" href="https://github.com/KYLEKHAI/fordward" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </article>
