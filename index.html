@@ -3,16 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nahiyan Ishtiaque | Software Developer</title>
+<title>Nahiyan Ishtiaque</title>
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
 <link rel="icon" href="assets/favicon.png?v=3" type="image/png" sizes="46x46">
 <meta name="description" content="Computer Science co-op student at the University of Ottawa. Backend, DevOps and full-stack developer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=5">
+<script>
+try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+</script>
 </head>
 <body>
+<button class="theme" id="themeToggle" type="button" aria-pressed="false" aria-label="Turn on dark mode">
+  <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2.2v2.2M12 19.6v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.2 12h2.2M19.6 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+</button>
 <div class="progress" id="progress"></div>
 <div class="glows" aria-hidden="true"><i class="g1"></i><i class="g2"></i><i class="g3"></i></div>
 
@@ -25,7 +32,6 @@
       </p>
       <div class="socials" data-socials></div>
     </div>
-    <div class="scroll-cue" aria-hidden="true"></div>
   </section>
 
   <section class="section" id="experience">
@@ -153,8 +159,18 @@
       <div class="logo uo" data-fallback="uO"><img src="assets/logos/uottawa.png?v=2" alt="University of Ottawa logo"></div>
       <div>
         <div class="job-head"><div><h3>University of Ottawa</h3>
-          <p class="meta">Honours Bachelor of Science in Computer Science (Co-op)</p></div>
+          <p class="meta">Honours Bachelor of Science in Computer Science (Co-op)</p>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a7.2 7.2 0 0 0-7.2 7.2c0 5.4 7.2 12.4 7.2 12.4s7.2-7 7.2-12.4A7.2 7.2 0 0 0 12 2.2zm0 9.7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Ottawa</span><i>Canada</i></p></div>
           <div class="dates"><span class="leaf"><b>2022</b><i>SEP</i></span><span class="span"><em>In progress</em></span><span class="leaf"><b>Present</b><i>NOW</i></span></div></div>
+      </div>
+    </article>
+    <article class="job edu reveal" style="--c:var(--purple)">
+      <div class="logo tks" data-fallback="TKS"><img src="assets/logos/tks.svg" alt="The Knowledge Society logo"></div>
+      <div>
+        <div class="job-head"><div><h3>Innovator</h3>
+          <p class="meta">The Knowledge Society</p>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a7.2 7.2 0 0 0-7.2 7.2c0 5.4 7.2 12.4 7.2 12.4s7.2-7 7.2-12.4A7.2 7.2 0 0 0 12 2.2zm0 9.7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Ottawa</span><i>Canada</i></p></div>
+          <div class="dates"><span class="leaf"><b>2019</b><i>SEP</i></span><span class="span"><em>10 months</em></span><span class="leaf"><b>2020</b><i>JUN</i></span></div></div>
       </div>
     </article>
   </section>
@@ -173,7 +189,7 @@
   <section class="section leetcode" id="leetcode">
     <h2 class="reveal">LeetCode</h2>
     <a class="leet-card reveal" href="https://leetcode.com/u/nahiyan_i/" target="_blank" rel="noopener">
-      <img src="https://leetcard.jacoblin.cool/nahiyan_i?theme=light&amp;font=Inter&amp;ext=heatmap&amp;border=1&amp;radius=20&amp;colors=fbf7f1,e4d8c6,3e3934,6f675e,3d6f8f,4dab9a,d4923a,d4655c" width="500" height="320" alt="LeetCode stats for nahiyan_i">
+      <img src="https://leetcard.jacoblin.cool/nahiyan_i?theme=light&amp;font=Inter&amp;ext=heatmap&amp;border=1&amp;radius=20&amp;colors=fbf7f1,e4d8c6,353e43,6f675e,3d6f8f,4dab9a,d4923a,d4655c" width="500" height="320" alt="LeetCode stats for nahiyan_i">
     </a>
   </section>
 
@@ -185,7 +201,7 @@
     <p class="copyright reveal">© 2026 Nahiyan Ishtiaque. All rights reserved.</p>
   </section>
 </main>
-<script src="script.js?v=6"></script>
+<script src="script.js?v=11"></script>
 <script src="analytics.js?v=1"></script>
 </body>
 </html>
